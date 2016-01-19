@@ -33,11 +33,25 @@ class ViewController: UITableViewController {
         cell.tweetTextLabel.text = tweet.tweetText
         cell.userNameLabel.text = tweet.userName
         cell.createdAtLabel.text = tweet.createdAt
-        if tweet.pictureURL != nil {
-            if let imageData = NSData(contentsOfURL: tweet.pictureURL!) {
-                cell.pictureImageView.image = UIImage(data: imageData)
-            }
-        }
+        
+        
+        
+        
+        
+        
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0), {() -> Void in
+            print(NSThread.isMainThread() ? "Main Thread" : "Not on Main Thread")
+            if tweet.pictureURL != nil {
+                if let imageData = NSData(contentsOfURL: tweet.pictureURL!) {
+                    dispatch_async(dispatch_get_main_queue(), {() -> Void in
+                        print(NSThread.isMainThread() ? "Main Thread" : "Not on Main Thread")
+                        if cell.userNameLabel.text == tweet.userName {
+                            cell.pictureImageView.image = UIImage(data: imageData)
+                        }
+                    })
+                }
+            } 
+        })
         return cell
     }
     
@@ -143,6 +157,18 @@ class ViewController: UITableViewController {
             print("handleTwitterData received no data")
         }
     }
+    
+    @IBAction func addTweetButtonPressed(sender: UIBarButtonItem) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
+            let tweetVC = SLComposeViewController (forServiceType: SLServiceTypeTwitter)
+            presentViewController(tweetVC, animated: true, completion: nil)
+        } else {
+            print ("Can't send tweet")
+        }
+        
+        
+    }
+    
 
 
 }
