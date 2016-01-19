@@ -22,39 +22,40 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="michaeljweitzman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8b-wx-s19">
-                                            <rect key="frame" x="135" y="0.0" width="137" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="michaeljweitzman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8b-wx-s19">
+                                            <rect key="frame" x="180" y="15" width="137" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ppl will always find a way to critique Only way to shut up cirits is to win" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrR-bM-V7W">
-                                            <rect key="frame" x="135" y="45" width="444" height="68"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ppl will always find a way to critique Only way to shut up cirits is to win" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrR-bM-V7W">
+                                            <rect key="frame" x="180" y="44" width="412" height="68"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Created At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH8-VB-NbK">
-                                            <rect key="frame" x="497" y="0.0" width="82" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Created At" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH8-VB-NbK">
+                                            <rect key="frame" x="497" y="15" width="82" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRW-l8-hNb">
-                                            <rect key="frame" x="8" y="0.0" width="119" height="112"/>
+                                            <rect key="frame" x="18" y="8" width="133" height="92"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="PrR-bM-V7W" firstAttribute="top" secondItem="o8b-wx-s19" secondAttribute="bottom" constant="24" id="BpX-vy-9mf"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="RH8-VB-NbK" secondAttribute="trailing" constant="13" id="LQh-wi-t64"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="qRW-l8-hNb" secondAttribute="bottom" id="See-f8-yeF"/>
-                                        <constraint firstItem="PrR-bM-V7W" firstAttribute="leading" secondItem="qRW-l8-hNb" secondAttribute="trailing" constant="8" id="Whm-mb-3BN"/>
-                                        <constraint firstItem="o8b-wx-s19" firstAttribute="leading" secondItem="qRW-l8-hNb" secondAttribute="trailing" constant="8" id="bKW-P6-b1u"/>
-                                        <constraint firstItem="RH8-VB-NbK" firstAttribute="centerY" secondItem="o8b-wx-s19" secondAttribute="centerY" id="cHz-0z-Jau"/>
-                                        <constraint firstAttribute="leadingMargin" secondItem="qRW-l8-hNb" secondAttribute="leading" id="gTW-n8-F3e"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="PrR-bM-V7W" secondAttribute="trailing" constant="13" id="mlN-mu-gLu"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="PrR-bM-V7W" secondAttribute="bottom" constant="15" id="nQn-8z-82r"/>
-                                        <constraint firstItem="o8b-wx-s19" firstAttribute="top" secondItem="PJL-Dj-3uP" secondAttribute="topMargin" constant="8" id="taq-Kf-ybA"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PrR-bM-V7W" secondAttribute="trailing" id="5d4-y5-vrT"/>
+                                        <constraint firstItem="o8b-wx-s19" firstAttribute="top" secondItem="PJL-Dj-3uP" secondAttribute="topMargin" constant="7" id="7u6-Oe-mR2"/>
+                                        <constraint firstItem="qRW-l8-hNb" firstAttribute="leading" secondItem="PJL-Dj-3uP" secondAttribute="leadingMargin" constant="10" id="Aqx-6s-yWX"/>
+                                        <constraint firstItem="o8b-wx-s19" firstAttribute="centerY" secondItem="RH8-VB-NbK" secondAttribute="centerY" id="QU3-Ni-CPM"/>
+                                        <constraint firstItem="RH8-VB-NbK" firstAttribute="leading" secondItem="o8b-wx-s19" secondAttribute="trailing" constant="180" id="Ynp-Xj-7hQ"/>
+                                        <constraint firstItem="o8b-wx-s19" firstAttribute="leading" secondItem="qRW-l8-hNb" secondAttribute="trailing" constant="29" id="bOm-lq-1ZB"/>
+                                        <constraint firstItem="RH8-VB-NbK" firstAttribute="top" secondItem="PJL-Dj-3uP" secondAttribute="topMargin" constant="7" id="cGj-F8-8cB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="PrR-bM-V7W" secondAttribute="bottom" id="fBR-Gf-gYJ"/>
+                                        <constraint firstItem="PrR-bM-V7W" firstAttribute="top" secondItem="o8b-wx-s19" secondAttribute="bottom" constant="8" id="kyE-m3-DVb"/>
+                                        <constraint firstItem="qRW-l8-hNb" firstAttribute="top" secondItem="PJL-Dj-3uP" secondAttribute="topMargin" constant="1" id="lBx-H2-70f"/>
+                                        <constraint firstItem="PrR-bM-V7W" firstAttribute="leading" secondItem="qRW-l8-hNb" secondAttribute="trailing" constant="29" id="pkh-Cd-B9v"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
